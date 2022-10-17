@@ -1,5 +1,4 @@
-$bg-color: white;
-$text-color: gray;
+@use "colors";
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
@@ -8,8 +7,8 @@ $text-color: gray;
 }
 
 body {
-  background-color: $bg-color;
-  color: $text-color;
+  background-color: colors.$bg-color;
+  color: colors.$text-color;
 }
 
 h1 {
