@@ -1,6 +1,7 @@
 @use "colors";
 @use "spacings";
 @use "borders";
+@use "sass:math";
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
@@ -78,9 +79,10 @@ button {
   padding: spacings.$base-padding;
   border: borders.$base-border-thickness solid #ddd;
   box-shadow: spacings.$base-box-shadows;
+  border-radius: math.div(borders.$base-border-radius, 2);
 
   .card-title {
-    font-size: spacings.$base-font-size;
+    font-size: spacings.$font-size-lg;
     padding-bottom: spacings.$base-padding;
     font-weight: bold;
   }
@@ -93,3 +95,6 @@ button {
     }
   }
 }
+
+// Debug features
+@debug math.div(10, 7);
