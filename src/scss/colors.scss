@@ -1,6 +1,30 @@
+@use "sass:math";
+
 $bg-color: whitesmoke;
 $text-color: gray;
 $primary-color: #3299ef;
 $secondary-color: #1ac888;
 $error-color: #d32752;
 $info-color: #f6c31c;
+
+// Maps with color palette:
+
+$colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "error": $error-color,
+  "info": $info-color,
+  "blue": #1919e6,
+  "red": #e61919,
+  "yellow": #e6e619,
+  "green": #19e635,
+  "orange": #ffa600,
+  "purple": #9900ff,
+  "gray": #808080,
+  "black": black,
+  "white": white,
+);
+
+@debug map-get($colors, "gray");
+@debug map-has-key($colors, "error");
+@debug map-remove($colors, "black");

@@ -96,5 +96,9 @@ button {
   }
 }
 
+.test-button {
+  background-color: map-get(colors.$colors, "purple");
+}
+
 // Debug features
-@debug math.div(10, 7);
+// @debug math.div(10, 7);
