@@ -71,3 +71,25 @@ button {
   border-radius: borders.$base-border-radius;
   border-width: borders.$base-border-thickness;
 }
+
+// Card component: (Nesting CSS rules)
+.card {
+  display: block;
+  padding: spacings.$base-padding;
+  border: borders.$base-border-thickness solid #ddd;
+  box-shadow: spacings.$base-box-shadows;
+
+  .card-title {
+    font-size: spacings.$base-font-size;
+    padding-bottom: spacings.$base-padding;
+    font-weight: bold;
+  }
+
+  .card-body {
+    font-size: spacings.$base-font-size;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
