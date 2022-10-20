@@ -1,17 +1,73 @@
 @use "colors";
+@use "spacings";
+@use "borders";
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
-:root {
-  font-family: "Nunito", sans-serif;
+* {
+  color: inherit;
+  max-width: spacings.$max-website-width;
 }
 
 body {
   background-color: colors.$bg-color;
   color: colors.$text-color;
+  font-family: "Nunito", sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: colors.$secondary-color;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dotted #efefef;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1 {
-  font-weight: 700;
-  text-transform: uppercase;
+  a {
+    color: darkcyan;
+  }
+}
+
+// Variables
+
+button {
+  min-width: min-content;
+  min-height: 45px;
+  border: 0;
+  color: white;
+  background-color: colors.$primary-color;
+  border-radius: borders.$base-border-radius;
+  padding: spacings.$base-padding;
+}
+
+.error {
+  color: colors.$error-color;
+  border-color: colors.$error-color;
+  border-style: solid;
+  margin: spacings.$base-margin;
+  padding: spacings.$base-padding;
+  border-radius: borders.$base-border-radius;
+  border-width: borders.$base-border-thickness;
+}
+
+.notification {
+  color: colors.$secondary-color;
+  border-color: colors.$secondary-color;
+  border-style: solid;
+  margin: spacings.$base-margin;
+  padding: spacings.$base-padding;
+  border-radius: borders.$base-border-radius;
+  border-width: borders.$base-border-thickness;
 }
