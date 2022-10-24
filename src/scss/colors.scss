@@ -80,6 +80,6 @@ $colors: (
   }
 }
 
-@debug map-get($colors, "gray");
-@debug map-has-key($colors, "error");
-@debug map-remove($colors, "black");
+// @debug map-get($colors, "gray");
+// @debug map-has-key($colors, "error");
+// @debug map-remove($colors, "black");

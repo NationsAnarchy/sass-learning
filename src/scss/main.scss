@@ -23,7 +23,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: colors.$secondary-color;
 }
 
 hr {
@@ -98,6 +97,40 @@ button {
 
 .test-button {
   background-color: map-get(colors.$colors, "purple");
+}
+
+// Mixins
+@mixin btn($bg-color: darkblue) {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: spacings.$base-padding, spacings.$base-padding * 2;
+  border-radius: borders.$base-border-radius;
+  background-color: $bg-color;
+}
+
+.btn {
+  @include btn;
+}
+
+@each $key, $val in colors.$colors {
+  .btn-#{$key} {
+    @include btn($val);
+    &:hover {
+      background-color: lighten($val, 5);
+    }
+  }
+
+  .btn-outlined-#{$key} {
+    @include btn(#fff);
+    color: black;
+    border: borders.$base-border-thickness solid $val;
+    &:hover {
+      color: #fff;
+      background-color: $val;
+    }
+  }
 }
 
 // Debug features
