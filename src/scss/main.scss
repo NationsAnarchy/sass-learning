@@ -4,6 +4,7 @@
 @use "utilities";
 @use "breakpoints";
 @use "grid";
+@use "navbar";
 @use "sass:math";
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
@@ -80,7 +81,7 @@ button {
   display: block;
   padding: spacings.$base-padding;
   border: borders.$base-border-thickness solid #ddd;
-  box-shadow: spacings.$base-box-shadows;
+  box-shadow: spacings.$base-box-shadow;
   border-radius: math.div(borders.$base-border-radius, 2);
 
   .card-title {

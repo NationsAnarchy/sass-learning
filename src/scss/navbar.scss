@@ -1,0 +1,30 @@
+@use "spacings";
+@use "colors";
+
+%flex-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navbar {
+  @extend %flex-layout;
+  padding: spacings.$base-padding spacings.$base-padding * 2;
+  box-shadow: spacings.$base-box-shadow;
+
+  .site-title {
+    font-size: spacings.$font-size-lg;
+  }
+  .container {
+    @extend %flex-layout;
+  }
+}
+
+@each $key, $val in colors.$colors {
+  .navbar-#{$key} {
+    @extend .navbar;
+    background-color: $val;
+  }
+}
