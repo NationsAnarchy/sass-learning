@@ -1,109 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+    <title>SASS Practice and stuff you know</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="scss/main.scss" />
-  <title>SASS Practice and stuff you know</title>
-</head>
+  <body>
+    <header>
+      <nav class="navbar-secondary text-white mb-4">
+        <div class="container">
+          <h2 class="site-title">Hey look at me!</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+            blanditiis nisi id consequuntur dignissimos perspiciatis?
+          </p>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header></header>
-  <nav class="navbar-secondary text-white mb-4">
-    <div class="container">
-      <h2 class="site-title">Hey look at me!</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum blanditiis nisi id consequuntur dignissimos
-        perspiciatis?</p>
-    </div>
-  </nav>
-  <main class="container">
-    <h1>Me learning some SASS/SCSS</h1>
-    <p>
-      Thanks to <a href="https://www.kevinpowell.co/">@Kevin Powell</a> and
-      <a href="https://netninja.dev/">@Shaun Pelling aka The Net Ninja</a>
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cumque,
-      necessitatibus voluptas non eligendi nihil cum harum hic adipisci aut
-      ratione assumenda veniam. Cumque rerum et explicabo obcaecati quaerat.
-      Aut?
-    </p>
-    <button type="button">Test button etc. Lorem</button>
-    <p class="error">Error text</p>
-    <p class="notification">Notification text</p>
-    <button class="test-button">Purple button through map-get</button>
-    <h4>Card component example:</h4>
-    <div class="card">
-      <div class="card-title text-secondary">Card title is here</div>
-      <p class="card-body">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod ad
-        quidem labore dolore sit id recusandae veniam magnam cupiditate
-        incidunt! <a href="https://google.com.vn">Google here!</a>
+    <main class="container">
+      <h1>Me learning some SASS/SCSS</h1>
+      <p>
+        Thanks to
+        <a class="text-secondary" href="https://www.kevinpowell.co/"
+          >@Kevin Powell</a
+        >
+        and
+        <a class="text-secondary" href="https://netninja.dev/"
+          >@Shaun Pelling aka The Net Ninja</a
+        >
       </p>
-    </div>
-    <br />
-    <span class="text-info-light-8 bg-black">Test</span>
-    <br />
-    <span class="text-yellow-dark-3 bg-gray-dark-7">Another test</span>
-    <br />
-    <span class="text-green-dark-1 text-hover-orange-light-2 bg-gray-dark-7">Yet another test</span>
-    <br />
-    <br />
-    <button class="btn-primary">Test button mixins</button>
-    <button class="btn-outlined-error">Test outlined button mixins</button>
-    <button class="btn">Default button test</button>
-    <a href="https://google.com.vn" target="_blank" rel="noopener noreferrer">
-      <button type="button" class="btn-outlined-primary">Google!</button>
-    </a>
-    <br>
-    <br>
-    <button class="btn-complement-info">Complement one test</button>
-    <div class="mb-1 mt-2">All font sizes</div>
-    <div class="font-sm">Small</div>
-    <div class="font-md">Medium</div>
-    <div class="font-lg">Large</div>
-    <div class="font-xl">Extra Large</div>
-    <div class="font-xxl">XXL</div>
-    <div class="test-responsive">Responsive test</div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cumque,
+        necessitatibus voluptas non eligendi nihil cum harum hic adipisci aut
+        ratione assumenda veniam. Cumque rerum et explicabo obcaecati quaerat.
+        Aut?
+      </p>
+      <button type="button">Test button etc. Lorem</button>
+      <p class="error">Error text</p>
+      <p class="notification">Notification text</p>
+      <button class="test-button">Purple button through map-get</button>
+      <h4>Card component example:</h4>
+      <div class="card">
+        <div class="card-title text-secondary">Card title is here</div>
+        <p class="card-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod ad
+          quidem labore dolore sit id recusandae veniam magnam cupiditate
+          incidunt!
+          <a class="text-info" href="https://google.com.vn">Google here!</a>
+        </p>
+      </div>
+      <br />
+      <span class="text-info-light-8 bg-black">Test</span>
+      <br />
+      <span class="text-yellow-dark-3 bg-gray-dark-7">Another test</span>
+      <br />
+      <span class="text-green-dark-1 text-hover-orange-light-2 bg-gray-dark-7"
+        >Yet another test</span
+      >
+      <br />
+      <br />
+      <button class="btn-primary">Test button mixins</button>
+      <button class="btn-outlined-error">Test outlined button mixins</button>
+      <button class="btn">Default button test</button>
+      <a href="https://google.com.vn" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn-outlined-primary">Google!</button>
+      </a>
+      <br />
+      <br />
+      <button class="btn-complement-info">Complement one test</button>
+      <div class="mb-1 mt-2">All font sizes</div>
+      <div class="font-sm">Small</div>
+      <div class="font-md">Medium</div>
+      <div class="font-lg">Large</div>
+      <div class="font-xl">Extra Large</div>
+      <div class="font-xxl">XXL</div>
+      <div class="test-responsive">Responsive test</div>
 
-    <h2 class="mb-2">Grid system</h2>
-    <div class="row gap-1 justify-center">
-      <div class="col-12-xs col-5-sm col-3-xl">
-        <div class="card">
-          <h3 class="card-title">A title</h3>
-          <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit voluptatem soluta
-            architecto quasi rerum velit officia temporibus provident. Veniam excepturi quos tenetur perspiciatis, eum
-            odio et saepe unde reprehenderit ut.</p>
+      <h2 class="mb-2">Grid system</h2>
+      <div class="row gap-1 justify-center">
+        <div class="col-12-xs col-5-sm col-3-xl">
+          <div class="card">
+            <h3 class="card-title">A title</h3>
+            <p class="card-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+              voluptatem soluta architecto quasi rerum velit officia temporibus
+              provident. Veniam excepturi quos tenetur perspiciatis, eum odio et
+              saepe unde reprehenderit ut.
+            </p>
+          </div>
+        </div>
+        <div class="col-12-xs col-5-sm col-3-xl">
+          <div class="card">
+            <h3 class="card-title">A title</h3>
+            <p class="card-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+              voluptatem soluta architecto quasi rerum velit officia temporibus
+              provident. Veniam excepturi quos tenetur perspiciatis, eum odio et
+              saepe unde reprehenderit ut.
+            </p>
+          </div>
+        </div>
+        <div class="col-12-xs col-5-sm col-3-xl">
+          <div class="card">
+            <h3 class="card-title">A title</h3>
+            <p class="card-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+              voluptatem soluta architecto quasi rerum velit officia temporibus
+              provident. Veniam excepturi quos tenetur perspiciatis, eum odio et
+              saepe unde reprehenderit ut.
+            </p>
+          </div>
+        </div>
+        <div class="col-12-xs col-5-sm col-3-xl">
+          <div class="card">
+            <h3 class="card-title">A title</h3>
+            <p class="card-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+              voluptatem soluta architecto quasi rerum velit officia temporibus
+              provident. Veniam excepturi quos tenetur perspiciatis, eum odio et
+              saepe unde reprehenderit ut.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-12-xs col-5-sm col-3-xl">
-        <div class="card">
-          <h3 class="card-title">A title</h3>
-          <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit voluptatem soluta
-            architecto quasi rerum velit officia temporibus provident. Veniam excepturi quos tenetur perspiciatis, eum
-            odio et saepe unde reprehenderit ut.</p>
-        </div>
-      </div>
-      <div class="col-12-xs col-5-sm col-3-xl">
-        <div class="card">
-          <h3 class="card-title">A title</h3>
-          <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit voluptatem soluta
-            architecto quasi rerum velit officia temporibus provident. Veniam excepturi quos tenetur perspiciatis, eum
-            odio et saepe unde reprehenderit ut.</p>
-        </div>
-      </div>
-      <div class="col-12-xs col-5-sm col-3-xl">
-        <div class="card">
-          <h3 class="card-title">A title</h3>
-          <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit voluptatem soluta
-            architecto quasi rerum velit officia temporibus provident. Veniam excepturi quos tenetur perspiciatis, eum
-            odio et saepe unde reprehenderit ut.</p>
-        </div>
-      </div>
-    </div>
-    <footer></footer>
-</body>
-
+    </main>
+  </body>
 </html>
