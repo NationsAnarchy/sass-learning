@@ -3,13 +3,14 @@
 @use "borders";
 @use "utilities";
 @use "breakpoints";
+@use "grid";
 @use "sass:math";
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
 * {
   color: inherit;
-  max-width: spacings.$max-website-width;
+  // max-width: spacings.$max-website-width;
 }
 
 body {
